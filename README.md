@@ -80,6 +80,6 @@ I make this code available under the terms of the GNU General Public
 License (see the attached file LICENSE) for the purpose of documenting
 a historic development process.
 
-See http://www.mathematik.uni-ulm.de/modula/history/ for more infos.
+See https://github.com/afborchert/lilith for more infos.
 
 Andreas F. Borchert
