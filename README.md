@@ -73,8 +73,8 @@ ancient architecture using an installation of UNIX Edition VII which is
 fortunately now freely available.
 
 Links:
-   http://simh.trailing-edge.com/ (The Computer History Simulation Project)
-   http://simh.trailing-edge.com/kits/iu7swre.zip (Unix Edition VII)
+ * http://simh.trailing-edge.com/ (The Computer History Simulation Project)
+ * http://simh.trailing-edge.com/kits/iu7swre.zip (Unix Edition VII)
 
 I make this code available under the terms of the GNU General Public
 License (see the attached file LICENSE) for the purpose of documenting
