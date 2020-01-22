@@ -1,0 +1,42 @@
+Auswertung eines Back-Trace von Lilith:
+
+	( 1 )	Uebersetze l_load.c mit -DTRACE .
+		(Die anderen Module unveraendert lassen.)
+	( 2 )	Starte folgendes Kommando:
+
+		a.out -h 90 -s 20 -c 25 Base.m2c 2>OUT
+
+		wobei man als Sourcefile ein minimales
+		Modula-2 Programm angibt.
+	( 3 )	Man editiere OUT so, dass nur drei Zahlen-
+		kolonnen uebrigbleiben.
+
+	( 4 )	Starte folgendes Kommando:
+
+		../mle/list >OUT2
+
+		In OUT2 ist nun eine uebersichtliche Liste mit
+		den Anfangsaddressen aller Module.
+		(Alle Addressen in oktaler Darstellung).
+
+	( 5 )	Per
+
+		cd ../mle
+		make mcl_l >MCL_L
+
+		erhalten Sie eine Liste der Modulnummern.
+		Nun koennen Sie in Verbindung von OUT2 und
+		MCL_L die einzelnen Module des Backtraces
+		ermitteln.
+		(F-Register * 4 = Moduladdresse)
+	( 6 )	Um die Offsets der einzelnen Prozeduren des
+		Moduls zu ermitteln genuegt
+
+		mcd name.m2 | grep proc
+
+		(Vergleich mit dem PC-Register).
+
+Wie Sie sehen ist es besser, solche Fehler erst gar nicht zu verursachen...
+
+Vor cc -DTRACE *.c wird gewarnt, der Trace-Output ist extrem umfangreich
+und das Ausfuehrungstempo wird sehr langsam.
